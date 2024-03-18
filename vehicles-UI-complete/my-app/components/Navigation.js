@@ -1,7 +1,7 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import { readToken, removeToken } from "../lib/authenticate";
+import { readToken, removeToken } from "@/lib/authenticate";
 
 export default function Navigation(props) {
 

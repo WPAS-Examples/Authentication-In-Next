@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { isAuthenticated } from '../lib/authenticate';
+import { isAuthenticated } from '@/lib/authenticate';
 
 const PUBLIC_PATHS = ['/login', '/', '/_error'];
 

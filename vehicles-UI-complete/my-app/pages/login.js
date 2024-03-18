@@ -1,6 +1,6 @@
 import { Card, Form, Alert, Button } from "react-bootstrap";
 import { useState, useEffect } from 'react';
-import { authenticateUser } from "../lib/authenticate";
+import { authenticateUser } from "@/lib/authenticate";
 import { useRouter } from 'next/router';
 
 export default function Login(props) {

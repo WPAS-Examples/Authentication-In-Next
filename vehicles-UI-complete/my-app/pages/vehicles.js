@@ -1,5 +1,5 @@
 import { Card, Table } from "react-bootstrap";
-import { getToken } from "../lib/authenticate";
+import { getToken } from "@/lib/authenticate";
 
 import useSWR from 'swr';
 const fetcher = (url) => fetch(url, { headers: { Authorization: `JWT ${getToken()}` }}).then((res) => res.json());
