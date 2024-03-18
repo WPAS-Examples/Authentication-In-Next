@@ -1,4 +1,4 @@
-import jwt_decode from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 function setToken(token){
   localStorage.setItem('access_token', token);
@@ -10,7 +10,7 @@ export function getToken(){
 
 export function readToken(){
     const token = getToken();
-    return (token) ? jwt_decode(token) : null;
+    return (token) ? jwtDecode(token) : null;
 }
 
 export function isAuthenticated(){
