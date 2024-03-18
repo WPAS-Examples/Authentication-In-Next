@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 export default function Layout(props){
   return (
     <>
-    <Navigation></Navigation><br />
+    <Navigation /><br />
       <Container>
         <Row>
           <Col>
