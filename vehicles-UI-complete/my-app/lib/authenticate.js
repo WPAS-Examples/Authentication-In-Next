@@ -8,9 +8,13 @@ export function getToken(){
     return localStorage.getItem('access_token');
 }
 
-export function readToken(){
+export function readToken() {
+  try {
     const token = getToken();
-    return (token) ? jwtDecode(token) : null;
+    return token ? jwtDecode(token) : null;
+  } catch (err) {
+    return null;
+  }
 }
 
 export function isAuthenticated(){
