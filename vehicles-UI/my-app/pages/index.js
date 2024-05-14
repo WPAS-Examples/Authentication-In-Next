@@ -6,7 +6,7 @@ export default function Home() {
       <Card bg="light">
         <Card.Body>
           <h2>Welcome Home</h2>
-          Click "Vehicles" to view our extensive collection of vehicles
+          Click &ldquo;Vehicles&rdquo; to view our extensive collection of vehicles
         </Card.Body>
       </Card>
       <br />
